@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Alata';
+    src: url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Alata', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainpage-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 48px;
+    gap: 10px;
+    
+    width: 747px;
+    height: 497px;
+
+    background: #8F66FF;
+    border-radius: 30px;    
+}
+
+.mainpage-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 667px;
+    height: 83px;    
+}
+
+.litle-go-to-post-button{
+    position: relative;
+    display: flex;
+    right: 0;
+    align-items: center;
+    height: 18;
+    background: none;
+    border: none;
+
+    width: 116px;
+    height: 11px;
+}
+
+.COOL_ANIME_GIRL{
+    position: fixed;
+    width: 512px;
+    height: 512px;
+    left: -83px;
+    bottom: -35px;
+    flex: none;
+    flex-grow: 0;
+    z-index: 2;    
+}
+
+.social-text{
+    text-align: center;
+    width: 200px;
+    height: 44px;
+}
+
+.phrase-text{
+    width: 538px;
+    height: 44px;
+}
+
+.description{
+    width: 651px;
+    height: 196px;    
+}
+
+.or-text{
+    width: 175px;
+    height: 17px;
+}
+

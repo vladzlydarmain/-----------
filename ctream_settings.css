@@ -1,0 +1,150 @@
+.settings-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 1260px;
+    height: 697px;
+
+    background: #290099;
+    border-radius: 30px;
+}
+
+.button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 1229px;
+    height: 92px;  
+}
+
+.choosed{
+    background: #B499FF;
+    border-radius: 30px;   
+}
+
+.settings-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 1224px;
+    height: 573px; 
+}
+
+.settings-area-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+    
+    width: 423px;
+    height: 563px;
+}
+
+.stream-settings-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 226px;
+    height: 63px;
+    
+    background: #4400FF;
+    border-radius: 30px;
+}
+
+.input-for-strean-sets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 378px;
+    height: 71px;
+    
+    /* CSK - #4400FF/400
+    
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;
+}
+
+.settings-area-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    
+    width: 423px;
+    height: 563px; 
+}
+
+.with-radiobutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+    
+    width: 419px;
+    height: 79px;
+    
+}
+
+.property{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 256px;
+    height: 71px;
+    
+    /* CSK - #4400FF/400
+    
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;  
+}
+
+.settings-radiobutton{
+    width: 44px;
+    height: 24px;     
+}
+
+.go-live{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 144px;
+    height: 63px;
+    
+    background: #B11A1A;
+    border-radius: 30px;    
+}

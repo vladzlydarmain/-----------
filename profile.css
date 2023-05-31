@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+}
+
+.your-profile-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px 103px 22px;
+    
+    width: 415px;
+    height: 102px;
+
+    background: #3600CC;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 10px;
+    gap: 20px;
+    isolation: isolate;
+    
+    position: relative;    
+}
+
+.profile-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    
+    width: 1191px;
+    height: 1595px;
+    
+    background: #8F66FF;
+    border-radius: 30px;    
+}
+
+.profile-info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    isolation: isolate;
+    
+    width: 1161px;
+    height: 489px;
+    
+    background: #6933FF;
+    border-radius: 30px;    
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 10px;
+
+    width: 1161px;
+    height: 200px;
+    
+    background: url(images/Banner.png);
+    border-radius: 30px 30px 0px 0px;
+
+    align-self: stretch;
+}
+
+.div-with-nickname-div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    
+    width: 1161px;
+    height: 140px;
+
+    align-self: stretch;
+}
+
+.nickname-and-adress-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 237px;
+    height: 140px;
+}
+
+.nickname-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 10px;
+    gap: 10px;
+    
+    width: 237px;
+    height: 104px;
+}
+
+.nickname{
+    width: 217px;
+    height: 44px;
+}
+
+.address-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 190px;
+    height: 36px;
+}
+
+.address{
+    width: 170px;
+    height: 28px;
+}
+
+.space-with-live{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    
+    max-width: 924px;
+    height: 140px;
+
+    align-self: stretch;
+    flex-grow: 1;    
+}
+
+.go-live{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 144px;
+    height: 63px;
+    
+    background: #B11A1A;
+    border-radius: 30px;    
+}
+
+.div-with-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 1161px;
+    height: 149px;
+
+    align-self: stretch;
+    z-index: 2; 
+}
+
+/*  */
+.description{
+    width: 575px;
+    height: fit-content;
+}
+/*  */
+
+.div-with-all-profile-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 1141px;
+    height: 63px;
+
+    align-self: stretch;
+}
+
+.div-with-2-profile-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 462px;
+    height: 63px;        
+}
+
+.add-post{
+    width: 155px;
+    height: 63px;
+}
+
+.icon{
+    box-sizing: border-box;
+    position: relative;
+    width: 152px;
+    height: 152px;
+    left: 0;
+    top: 0;
+    
+    background: url(images/umaru.jpg);
+    background-size: 152px 152px;
+    border: 4px solid #4400FF;
+    border-radius: 76px;
+
+    z-index: 3;    
+}
+
+.profile-bottom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 10px;
+    
+    width: 1161px;
+    height: 1066px;
+
+    align-self: stretch;
+}
+
+.left-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 21px;
+    
+    width: 314px;
+    height: 879px;
+
+    background: #1B0066;
+    border-radius: 30px;    
+}
+
+.friends-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 236px;
+    height: 340px;    
+}
+
+.friends-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 236px;
+    height: 70px;
+    
+    background: #B499FF;
+    border-radius: 30px;    
+}
+
+.friends-list-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 234px;
+    height: 230px;
+    overflow-x: scroll ;
+
+    background: #3600CC;
+    border-radius: 30px;   
+}
+
+.friends-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    
+    width: 856px;
+
+    background: #3600CC;
+    border-radius: 30px;    
+}
+
+.friend-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 14px;
+    gap: 10px;
+    
+    width: 131px;
+    height: 199px;
+    
+    background: #6933FF;
+    border-radius: 30px;   
+}
+
+.inner-friend-block{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 103px;
+    height: 199px;  
+}
+
+.icon-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 83px;
+    height: 83px;
+    
+    background: white;
+    background-image: url("images/account.png");
+    border-radius: 30px;    
+}
+
+/* .icon-post{
+    background: url("images/account.png");
+
+} */
+
+.fav-game-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 256px;
+    height: 331px;    
+}
+
+.fav-game-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 236px;
+    height: 70px;
+
+    background: #B499FF;
+    border-radius: 30px;   
+}
+
+.fav-game-list-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 231px;
+    height: 250px;
+    overflow-x: scroll;
+
+    background: #3600CC;
+    border-radius: 30px;        
+}
+
+.fav-game-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    
+    width: 484px;
+
+    background: #3600CC;
+    border-radius: 30px;   
+}
+
+.fav-game-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 14px;
+    gap: 10px;
+    
+    width: 148px;
+    height: 200px;
+    
+    background: #6933FF;
+    border-radius: 30px;    
+}
+
+.inner-fav-game-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 10px;
+    
+    width: 118px;
+    /* height: 200px;      */
+}
+
+.game-icon-div{
+    width: 98px;
+    height: 98px;
+    
+    background: url(images/csgo.png);
+    background-size: 98px 98px;
+    border-radius: 30px;    
+}
+
+.profile-posts-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+    
+    width: 837px;
+    height: 1046px;
+    
+    background: #3600CC;
+    border-radius: 30px;   
+}
+
+.post-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 691px;
+    height: 493px;
+
+    background: #6933FF;
+    border-radius: 30px;
+}
+
+.post-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 622px;
+    height: 323px;
+
+    background: #1B0066;
+    border-radius: 30px;   
+}
+
+.idol{
+    background: url("images/idol.png");
+}
+
+.csgo{
+    background: url(images/csgo_bg.png);
+}
+
+.post-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 26px;
+    gap: 10px;
+    
+    width: 624px;
+    height: 140px;
+
+    background: #B499FF;
+    border-radius: 30px; 
+}
+
+.post-main-text{
+    width: 572px;
+    height: 28px;    
+}
+
+.post-hashtag-div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 572px;
+    height: 28px;
+    align-self: stretch;
+}
+
+.post-hashtag-text{
+    width: 412px;
+    height: 28px;       
+}
+
+.post-div-with-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    isolation: isolate;
+    
+    width: 572px;
+    height: 44px;
+
+    align-self: stretch;  
+}
+
+.date-text{
+    width: 58px;
+    height: 17px;
+    color: #434149;
+}
+
+.remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 75px;
+    height: 21px;
+
+    background: #4400FF;
+    border-radius: 30px; 
+    
+    width: 44px;
+    height: 17px;
+    
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;    
+}
+
+.buttons-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}

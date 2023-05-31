@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Alata';
+    src: url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 100vh;
+    background-image: url("images/tile.jpg");   
+    isolation: isolate;
+    position: relative;
+}
+
+.page-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px 103px 22px;
+    gap: 10px;
+
+    width: 300px;
+    height: 102px;
+
+    color: #FFFFFF;
+    background: #3600CC;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.text-page-name{
+    width: 94px;
+    height: 55px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px 10px;
+
+    overflow-y: scroll;
+
+    background: #8F66FF;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    width: 691px;
+    height: 551px;
+
+    background: #6933FF;
+    border-radius: 30px;
+}
+
+.post-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    height: 323px;
+    width: 622px;
+    border-radius: 30px;
+}
+
+.card-interactions{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+
+    width: 572px;
+    height: 44px;
+}
+
+.interaction-button{
+    background: none;
+    border: none;
+}
+
+.card-content-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 26px;
+    gap: 10px;
+    isolation: isolate;
+    width: 624px;
+    height: 198px;
+    background: #B499FF;
+    border-radius: 30px;
+}
+
+.card-main-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    display: flex;
+    align-items: center;
+
+    width: 572px;
+
+    color: #000000;
+}
+
+.card-hashtag-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    width: 572px;
+    height: 28px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 10px;
+
+    width: 143px;
+    height: 48px;
+}
+
+.profile-img{
+    width: 48px;
+    height: 48px;
+}
+
+.profile-name{
+    font-size: 32px;
+    width: 65px;
+    color: #FFFFFF;
+}
+
+.like{
+    background: url("images/Likeicons.png");
+    width: 25px;
+    height: 25px;
+}
+
+.comment{
+    background: url("images/chats.png");
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+}
+
+.save{
+    background: url("images/Save buttonicons.png");
+    width: 25px;
+    height: 25px;
+}
+
+.like:hover{
+    background: url("images/like_hover.png");
+    width: 25px;
+    height: 25px;
+}
+
+.comment:hover{
+    background: url("images/chats_hover.png");
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+}
+
+.save:hover{
+    background: url("images/save_hover.png");
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+}
+
+.comment-modal{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+
+    width: 921px;
+    height: 50vh;
+    overflow-y: scroll;
+
+    background: #8F66FF;
+    border-radius: 30px;
+    z-index: 5;
+}
+
+.user-img{
+    width: 83.33px;
+    height: 83.33px;
+    background: url("images/account_circle_FILL0_wght400_GRAD0_opsz48 (2) 1profile.png");
+    background-size: 83.33px 83.33px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 10px;
+    gap: 10px;
+
+    width: 103.33px;
+    height: 198.33px;
+}
+
+.modal-text-text{
+    width: 546px;
+    height: 168px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 679.33px;
+    height: 218.33px;
+
+    /* CSK - #4400FF/400
+
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;
+}
+
+/* .cross{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: url("images/cross.png");
+    background-size: 40px 40px;
+}
+
+.cross:hover{
+    width: 40px;
+    height: 40px;
+    background: url("images/cross_hover.png");
+    background-size: 40px 40px; */
+/* } */
+
+.cross-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    width: 90%;
+}
+
+.card-date{
+    width: 90%;
+}
+
+.card-userdate{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
