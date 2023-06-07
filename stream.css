@@ -108,10 +108,11 @@
 }
 
 .user-img{
-    width: 160px;
-    height: 140px;
+    width: 160px; 
+    height: 140px; 
     background: url("images/profile_streams.png");
     background-size: 160px 140px;
+    background-color: #290099;
 }
 .streams{
     display: flex;
@@ -142,5 +143,70 @@
     width: 493px;
     height: 361px;
     background: #6933FF;
+    border-radius: 30px;
+}
+
+.stream-name{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #ECE5FF;
+    border-radius: 30px;
+
+}
+
+.live-sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 83px;
+    height: 41px;
+    background: #C40505;
+    border-radius: 30px;
+    color: white;
+}
+
+.views-count{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 6px;
+    gap: 10px;
+    
+    width: 97px;
+    height: 36px;
+    background: #DACCFF;
+    border-radius: 30px;
+    color: #07001A;
+
+    font-size: 20px;
+    line-height: 28px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.description-sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    width: 82px;
+    height: 37px;
+
+    background: #ECE5FF;
     border-radius: 30px;
 }

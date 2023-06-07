@@ -11,66 +11,90 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .register {
     color: #DACCFF;
     font-size: 40px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px 180px;
-    margin-top: 50px;
-
-    width: 218px;
-    height: 71px;
+    padding: 10px 20px;
+    gap: 10px;
+    width: fit-content;
     background: #3600CC;
     border-radius: 30px;
 
 }
+
+.normal-button {
+    width: 40%;
+    height: 63px;
+}
+
 .register-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 65px;
+    padding: 15px;
+    width: fit-content;
+    gap: 10px;
     border-radius: 30px;
     background: #8F66FF;
-
-    width: 608px;
-    height: 571px;
 }
 
-.inputs-reg{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 588px;
-    height: 71px;
-
-}    
 .submit-reg{
     color: #DACCFF;
     font-size: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 60px;
-    padding-bottom: 50px;
 
     gap: 15px;
     
-    width: 457px;
+    width: 90%;
     height: 63px;
 }  
 .have-acc{
-    color: #DACCFF;
-    font-size: 24px;
-    background: none;
-    border: none;
-    text-decoration: none;
+    position: relative;
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+
+    color: #FFFFFF;
+}
+
+.normal-input{
+    display: flex;
+    position: relative;
+}
+
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen, (max-width: 430px){
+    .have-acc{
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .normal-button{
+        width: 127px;
+    }
 }

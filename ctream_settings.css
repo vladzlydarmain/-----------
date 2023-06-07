@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Alata';
+    src: url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+}
+
+
 .settings-div{
     display: flex;
     flex-direction: column;
@@ -147,4 +153,21 @@
     
     background: #B11A1A;
     border-radius: 30px;    
+}
+
+.button-normal{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 30px;
+    background-color: #4400FF;
+    border: none;
+    color: white;
+    width: 226px;
+    height: 63px;
+    font-size: 27px;
 }

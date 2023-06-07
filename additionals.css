@@ -206,10 +206,20 @@ body{
 
 .font-black{
     color: black;
+    font-family: 'Alata', sans-serif;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .font-purple{
     color: #290099;
+    font-family: 'Alata', sans-serif;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .normal-button{
@@ -226,7 +236,7 @@ body{
 
     width: 226px;
     height: 63px;
-    background: #3600CC;
+    background: #3600CC; 
     border-radius: 30px; 
     transition: ease-in-out 300ms;
 }
@@ -259,7 +269,7 @@ body{
     color: #DACCFF;
     font-size: 30px;
     text-align: center;
-    width: 588px;
+    /* max-width: 588px; */
     height: 71px;
     border-radius: 30px;
     background: #6933FF;
@@ -268,10 +278,60 @@ body{
     
 }
 
+.normal-input::placeholder{
+    color: #938da3;
+}
+
 .normal-input:hover{
     border: 3px solid #290099;
 }
 
 .normal-input:focus{
     border: 3px solid #290099;
+}
+
+@media screen, (max-width: 430px){
+    /* .font-40{
+        font-size: 32px;
+        line-height: 44px;        
+    }
+
+    .font-32{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .font-20{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .font-12{
+        font-size: 8px;
+        line-height: 11px;
+    } */
+    .menu-button{
+        width: 40px;
+        height: 40px;            
+    }
+
+    .circle{
+        width: 34px;
+        height: 34px;
+        background: url("images/image1.png");
+        background-size: 34px 34px;
+        transition: 300ms;
+    }
+    
+    .circle:hover{
+        width: 34px;
+        height: 34px;
+        background: url("images/image.png");
+        background-size: 34px 34px;
+    }
+
+    .normal-input {
+        font-size: 20px;
+        text-align: center;
+        height: 60px;
+    }
 }

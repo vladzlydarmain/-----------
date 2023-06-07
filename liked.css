@@ -1,3 +1,4 @@
 .like{
     background: url("images/like_selected.png");
+    background-repeat: no-repeat;
 }

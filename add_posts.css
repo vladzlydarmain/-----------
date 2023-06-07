@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Lexend:wght@300&family=M+PLUS+2:wght@700&display=swap');
+.page-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 103px 20px;
+    gap: 5%;
+
+    width: 30%;
+    height: 8%;
+
+    color: #FFFFFF;
+    background: #3600CC;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.text-page-name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+}
+.add-posts-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 200px;
+
+
+    background: #290099;
+    border-radius: 30px;
+
+}
+.left-add-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+/* 
+    width: 511px;
+    height: 689px; */
+
+}
+.right-add-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+
+    /* width: 511px;
+    height: 689px; */
+
+}
+.propert{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 226px;
+    /* height: 63px; */
+
+    /* CSK - #4400FF/500
+
+    CSK - #4400FF/500
+    */
+    background: #4400FF;
+    border-radius: 30px;
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    color: #DACCFF;
+}
+.name-of-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 378px;
+    /* height: 71px; */
+
+    /* CSK - #4400FF/400
+
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    /* CSK - #4400FF/100 */
+
+    color: #DACCFF;
+
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 378px;
+    /* height: 71px; */
+
+    background: #6933FF;
+    border-radius: 30px;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #DACCFF;
+
+}
+.left-add-posts button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 369px;
+    /* height: 71px; */
+
+    /* CSK - #4400FF/500
+
+    CSK - #4400FF/500
+    */
+    background: #4400FF;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+}
+.add-settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    /* height: 63px; */
+
+    /* CSK - #4400FF/500
+
+    CSK - #4400FF/500
+    */
+    background: #4400FF;
+    border-radius: 30px;
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+}
+.add-settings-frame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+}
+.likes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 270px;
+    height: 71px;
+
+    /* CSK - #4400FF/400
+
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #DACCFF;
+    }
+.comments{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 270px;
+    height: 71px;
+
+    /* CSK - #4400FF/400
+
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #DACCFF;
+    background: #6933FF;
+    border-radius: 30px;
+}
+.anti-spam{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 270px;
+    height: 71px;
+
+    /* CSK - #4400FF/400
+
+    CSK - #4400FF/400
+    */
+    background: #6933FF;
+    border-radius: 30px;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    color: #DACCFF;
+    background: #6933FF;
+    border-radius: 30px;
+}
+.knopka-vkl{
+    width: 44px;
+    height: 24px;
+    background-size: 100%;
+    background-image: url("images/OFF.png");
+}
+.knopka-vkl:active{
+    background-image: url("images/ON.png");
+}
+
+.post-frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 10px;
+
+    width: 15%;
+    height: 100px;
+}
+.post-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 144px;
+    height: 63px;
+
+    /* CSK - #4400FF/500
+
+    CSK - #4400FF/500
+    */
+    background: #4400FF;
+    border-radius: 30px;
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    border: none;
+
+}
