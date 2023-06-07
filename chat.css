@@ -60,21 +60,10 @@ main{
     gap: 10px;
     
     width: 20%;
-    min-width: 100px;
     height: 96%;
     
-    /* CSK - #4400FF/800
-    
-    CSK - #4400FF/800
-    */
     background: #1B0066;
     border-radius: 30px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 .friends-area{
     display: flex;
@@ -135,7 +124,6 @@ main{
     padding: 10px;
 
     width: 80%;
-    min-width: 130px;
     height: 180px;
     background-color: #6933FF;
     border-radius: 30px;
@@ -284,9 +272,8 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    padding: 1%;
 
-    /* margin-left: 20px; */
     
     width: 70%;
     height: 60%;
@@ -305,23 +292,46 @@ main{
     line-height: 28px;
 }
 
+.chat-input::-webkit-scrollbar{
+    display: none;
+}
+
 .type-zone-button{
     height: 100%;
     width: 30%;
-}
-.buttons-chat{
-    height: 70%;
+    background: none;
+    border: none;
 }
 
-@media screen, (max-width: 430px) {
+.send-button{
+    background: none;
+    border: none; 
+    height: 50%;
+    display: none;
+}
+.send-button-img{
+    height: 100%;
+}
+
+.type-zone-button-img{
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+.buttons-chat{
+    height: 70%;
+    gap: 20px;
+}
+
+@media screen and (max-width: 430px) {
     
     .content{
         align-items: flex-start;
         padding: 3px;
         gap: 5px;
-        
-        width: 336px;
-        height: 676px;
+        width: 90%;
+        height: 100%;
         border-radius: 10px;
     }
     .friends-div{
@@ -329,7 +339,7 @@ main{
         gap: 10px;
         
         width: 85px;
-        height: 670px;
+        /* height: calc(100% - 20px); */
 
         background: #1B0066;
         border-radius: 10px;
@@ -339,14 +349,12 @@ main{
         align-items: flex-start;
         padding: 0px;
         
-        width: 240px;
-        height: 670px;
+        width: calc(100% - 110px);
 
         border-radius: 10px;
     }
 
     .friends-text{
-        padding: 5px 15px;
         gap: 10px;
         
         width: 69px;
@@ -379,9 +387,8 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px 14px;
         
-        width: fit-content;
+        width: 56px;
         height: fit-content;
         
         background: #6933FF;
@@ -391,6 +398,7 @@ main{
     .friend img{       
         width: 36px;
         height: 36px;
+        gap: 0;
         
         background: #FFFFFF;
         border-radius: 30px; 
@@ -402,14 +410,13 @@ main{
     }
 
     .chat-header{
-        width: 240px;
-        height: 45px;
+        width: 100%;
+        height: 10%;
         border-radius: 10px 10px 0px 0px;
     }
 
     .chat-icon{
-        width: 32px;
-        height: 32px;
+        height: 80%;
     }
 
     .chat-header p{
@@ -421,11 +428,12 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         gap: 10px;
         
-        width: 240px;
-        height: 573px;
+        width: 100%;
+        height: calc(80% - 10px);
     }
 
     .messages{
@@ -433,11 +441,11 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 0;
         padding: 0px;
-        gap: 11px;
+        gap: 10px;
         
-        width: 220px;
-        height: 87px;        
+        width: 95%;
     }
     .s1{
         display: flex;
@@ -446,8 +454,7 @@ main{
         padding: 0px;
         gap: 10px;
         
-        width: 220px;
-        height: 38px;
+        width: 100%;
     }
 
     .mess{
@@ -455,13 +462,11 @@ main{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 2px;
+        padding: 5px;
         gap: 10px;
         
-        width: 210px;
-        height: 38px;
-
-        background: #6933FF;
+        max-width: 70%;
+        width: fit-content;
         border-radius: 10px;        
     }
 
@@ -470,11 +475,9 @@ main{
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        padding: 0px 0px 0px 119px;
         gap: 10px;
         
-        width: 220px;
-        height: 38px;        
+        width: 100%;      
     }
 
     .type-zone{
@@ -485,8 +488,8 @@ main{
         padding: 10px 8px;
         gap: 12px;
         
-        width: 240px;
-        height: 52px;
+        width: calc(100% - 16px);
+        height: 10%;
         background: #3600CC;
         border-radius: 0px 0px 10px 10px;
     }
@@ -499,8 +502,8 @@ main{
         padding: 9px 10px;
         gap: 10px;
         
-        width: 155px;
-        height: 32px;
+        width: 70%;
+        height: 50%;
 
         background: #6933FF;
         border-radius: 10px;        
@@ -508,14 +511,36 @@ main{
 
     .buttons-chat{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0px;
         gap: 5px;
         
-        width: 67px;
-        height: 20px;
+        width: 30%;
+        height: 100%;
         
     }
+    .type-zone-button{
+        height: 50%;
+        width: 100%;
+        background: none;
+        border: none;
+    }
+    
+    .send-button{
+        display: flex;
+    }
+    .send-button-img{
+        height: 100%;
+    }
+
+    .page-name{
+        padding:0;
+        gap: 5%;
+        border-radius: 0px 0px 10px 10px;
+        height: fit-content;
+    }
+    
+
 }

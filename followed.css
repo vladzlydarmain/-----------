@@ -25,19 +25,8 @@
     overflow-y: scroll;
 
     background: #8F66FF;
-    border-radius: 30px;   
-}
-
-.followed-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    
-    width: 886px;
-    height: 201px;  
+    border-radius: 30px;  
+    flex-wrap: wrap; 
 }
 
 .followed-block{
@@ -91,4 +80,25 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 17px;   
+}
+
+@media screen and (max-width:650px) {
+    body{
+        width: 100vw;
+    }
+    .followed-div{
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        flex-wrap: nowrap;
+    }
+    .followed-text{
+        padding: 15px;
+        width: auto;
+        height: auto;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .font-40{
+        font-size: 30px;
+    }
 }

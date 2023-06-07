@@ -22,6 +22,8 @@
     align-items: center;
     padding: 0px 0px 10px;
     gap: 20px;
+    width: 100%;
+    height: 100vh;
     isolation: isolate;
     
     position: relative;    
@@ -33,9 +35,9 @@
     align-items: center;
     padding: 15px;
     gap: 10px;
-    
-    width: 1191px;
-    height: 1595px;
+
+    width: 90%;
+    /* height: 200%; */
     
     background: #8F66FF;
     border-radius: 30px;    
@@ -48,8 +50,8 @@
     padding: 0px;
     isolation: isolate;
     
-    width: 1161px;
-    height: 489px;
+    width: 100%;
+    height: 500px;
     
     background: #6933FF;
     border-radius: 30px;    
@@ -62,10 +64,12 @@
     padding: 10px 0px;
     gap: 10px;
 
-    width: 1161px;
+    width: 100%;
     height: 200px;
     
     background: url(images/Banner.png);
+    background-size: cover;
+    background-position: center;
     border-radius: 30px 30px 0px 0px;
 
     align-self: stretch;
@@ -77,67 +81,26 @@
     align-items: flex-end;
     padding: 0px;
     
-    width: 1161px;
-    height: 140px;
+    width: 100%;
+    height: 200px;
 
-    align-self: stretch;
+    /* align-self: stretch; */
 }
 
 .nickname-and-adress-div{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    
-    width: 237px;
-    height: 140px;
-}
-
-.nickname-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 0px 10px;
-    gap: 10px;
-    
-    width: 237px;
-    height: 104px;
-}
-
-.nickname{
-    width: 217px;
-    height: 44px;
-}
-
-.address-div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 10px;
-    
-    width: 190px;
-    height: 36px;
-}
-
-.address{
-    width: 170px;
-    height: 28px;
+    height: fit-content;
 }
 
 .space-with-live{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-start;
     padding: 10px;
     gap: 10px;
-    
-    max-width: 924px;
-    height: 140px;
-
     align-self: stretch;
     flex-grow: 1;    
 }
@@ -164,8 +127,8 @@
     padding: 10px;
     gap: 10px;
     
-    width: 1161px;
-    height: 149px;
+    width: 100%;
+    /* height: 149px; */
 
     align-self: stretch;
     z-index: 2; 
@@ -173,8 +136,9 @@
 
 /*  */
 .description{
-    width: 575px;
+    /* width: 575px; */
     height: fit-content;
+    text-align: start;
 }
 /*  */
 
@@ -184,10 +148,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 10px;
+    /* gap: 10px; */
     
-    width: 1141px;
-    height: 63px;
+    width: 95%;
+    height:fit-content;
 
     align-self: stretch;
 }
@@ -199,8 +163,8 @@
     padding: 0px;
     gap: 10px;
     
-    width: 462px;
-    height: 63px;        
+    width: fit-content;
+    height: 100%;        
 }
 
 .add-post{
@@ -213,11 +177,11 @@
     position: relative;
     width: 152px;
     height: 152px;
-    left: 0;
-    top: 0;
+    /* left: 0;
+    top: 0; */
     
-    background: url(images/umaru.jpg);
-    background-size: 152px 152px;
+    /* background: url(images/umaru.jpg);
+    background-size: 152px 152px; */
     border: 4px solid #4400FF;
     border-radius: 76px;
 
@@ -232,8 +196,8 @@
     padding: 10px 0px;
     gap: 10px;
     
-    width: 1161px;
-    height: 1066px;
+    width: 100%;
+    height: fit-content;
 
     align-self: stretch;
 }
@@ -242,17 +206,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
     padding: 20px 10px;
     gap: 21px;
     
-    width: 314px;
-    height: 879px;
+    width: 25%;
+    height:fit-content;
 
     background: #1B0066;
     border-radius: 30px;    
 }
 
-.friends-div{
+.category-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,11 +225,11 @@
     padding: 0px;
     gap: 10px;
     
-    width: 236px;
+    width: 80%;
     height: 340px;    
 }
 
-.friends-text{
+.text{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -272,41 +237,43 @@
     padding: 10px;
     gap: 10px;
     
-    width: 236px;
-    height: 70px;
-    
+    width: 90%;
     background: #B499FF;
     border-radius: 30px;    
 }
 
-.friends-list-div{
+.list-div{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
     gap: 10px;
     
-    width: 234px;
-    height: 230px;
+    width: 100%;
+    height: 100%;
     overflow-x: scroll ;
 
     background: #3600CC;
     border-radius: 30px;   
 }
 
-.friends-list{
+.list-div::-webkit-scrollbar{
+    display: none;
+}
+
+.list{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
     
-    width: 856px;
+    width: fit-content;
 
     background: #3600CC;
     border-radius: 30px;    
 }
 
-.friend-block{
+.block{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -354,74 +321,6 @@
 
 } */
 
-.fav-game-div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    
-    width: 256px;
-    height: 331px;    
-}
-
-.fav-game-text{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    
-    width: 236px;
-    height: 70px;
-
-    background: #B499FF;
-    border-radius: 30px;   
-}
-
-.fav-game-list-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    
-    width: 231px;
-    height: 250px;
-    overflow-x: scroll;
-
-    background: #3600CC;
-    border-radius: 30px;        
-}
-
-.fav-game-list{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    
-    width: 484px;
-
-    background: #3600CC;
-    border-radius: 30px;   
-}
-
-.fav-game-block{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 14px;
-    gap: 10px;
-    
-    width: 148px;
-    height: 200px;
-    
-    background: #6933FF;
-    border-radius: 30px;    
-}
-
 .inner-fav-game-block{
     display: flex;
     flex-direction: column;
@@ -449,8 +348,7 @@
     padding: 20px 10px;
     gap: 20px;
     
-    width: 837px;
-    height: 1046px;
+    width: 70%;
     
     background: #3600CC;
     border-radius: 30px;   
@@ -464,8 +362,8 @@
     padding: 10px;
     gap: 10px;
     
-    width: 691px;
-    height: 493px;
+    width: 90%;
+    height: 500px;
 
     background: #6933FF;
     border-radius: 30px;
@@ -479,7 +377,7 @@
     padding: 0px;
     gap: 10px;
     
-    width: 622px;
+    width: 90%;
     height: 323px;
 
     background: #1B0066;
@@ -488,10 +386,12 @@
 
 .idol{
     background: url("images/idol.png");
+    background-position: center;
 }
 
 .csgo{
     background: url(images/csgo_bg.png);
+    background-position: center;
 }
 
 .post-text{
@@ -501,16 +401,16 @@
     padding: 10px 26px;
     gap: 10px;
     
-    width: 624px;
-    height: 140px;
+    width: 90%;
+    /* height: 140px; */
 
     background: #B499FF;
     border-radius: 30px; 
 }
 
 .post-main-text{
-    width: 572px;
-    height: 28px;    
+    width: 100%;
+    /* height: 28px;     */
 }
 
 .post-hashtag-div{
@@ -520,14 +420,13 @@
     padding: 0px;
     gap: 10px;
     
-    width: 572px;
-    height: 28px;
+    width: 100%;
+    /* height: 28px; */
     align-self: stretch;
 }
 
 .post-hashtag-text{
-    width: 412px;
-    height: 28px;       
+    max-width: 412px;  
 }
 
 .post-div-with-buttons{
@@ -538,15 +437,13 @@
     gap: 10px;
     isolation: isolate;
     
-    width: 572px;
-    height: 44px;
+    width: 100%;
+    /* height: 44px; */
 
     align-self: stretch;  
 }
 
 .date-text{
-    width: 58px;
-    height: 17px;
     color: #434149;
 }
 
@@ -564,13 +461,11 @@
     background: #4400FF;
     border-radius: 30px; 
     
-    width: 44px;
-    height: 17px;
     
     font-family: 'Alata';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
 
     display: flex;
@@ -587,4 +482,105 @@
     align-items: center;
     padding: 10px;
     gap: 10px;
+    width: 90%;
+}
+
+.form-but{
+    width: 100%;
+}
+
+.liked{
+    width: 100%;
+}
+
+.saved{
+    width: 100%;
+}
+
+.address{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:430px){
+    .profile-div{
+        height: fit-content;
+        width: 95%;
+        padding: 0;
+    }
+
+    .banner{
+        height: 100px;
+    }
+
+    .go-live{
+        display: none;
+    }
+
+    .nickname{
+        font-size: 20px;
+        line-height: 28px; 
+    }
+
+    .address{
+        font-size: 12px;
+        line-height: 17px;  
+    }
+
+    .space-with-live{
+        width: 50%;
+    }
+
+    .change{
+        width: fit-content;
+        height: fit-content;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .description{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .div-with-all-profile-buttons{
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .div-with-2-profile-buttons{
+        width: 60%;
+    }
+    .div-with-2-profile-buttons button{
+        width: fit-content;
+        height: fit-content;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .add-form{
+        width: 30%;    
+    }
+
+    .add-post{
+        width: fit-content;
+        height: fit-content;
+        font-size: 12px;
+        line-height: 17px;            
+    }
+
+    .profile-bottom-div{
+        flex-direction: column;
+    }
+
+    .left-part{
+        width: 100%;
+        padding: 0;
+    }
+
+    .profile-posts-div{
+        width: 100%;
+        padding: 0;
+    }
 }

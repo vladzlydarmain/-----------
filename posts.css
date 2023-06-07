@@ -329,11 +329,85 @@ main{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 8px 10px 8px;
     gap: 10px;
     background: #6933FF;
     border-radius: 20px;
     border: none;
     width: 100cqb;
 
+}
+
+@media screen and (max-width:680px) {
+    body{
+        max-width: 100vw;
+    }
+    .page-name{
+        height: auto;
+        width: fit-content;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 0px 15px 15px;
+    }
+    .text-page-name{
+        font-size: 20px;
+        justify-content: center;
+    }
+    .content{
+        padding: 0;
+        max-width: 100vw
+    }
+    main{
+        max-width: fit-content;
+    }
+    .post-img{
+        max-width: 90%;
+        height: 250px;
+    }
+    .card-post{
+        /* padding: 10px; */
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        max-width: 87vw;
+        flex-direction: column;
+    }
+    .card-main-text{
+        max-width: 100%;
+    }
+    .card-content-text{
+        max-width: 90%;
+    }
+    .card-hashtag-text{
+        max-width: 100%;
+    }
+    .card-interactions{
+        max-width: 100%;
+    }
+    .comment-modal{
+        width: 100vw;
+    }
+    .big-modal-content{
+        max-width: 95%;
+    }
+    .modal-content{
+        max-width: 100%;
+        padding: 0;
+        height: fit-content;
+    }
+    .cross-container{
+        max-width: 95%;
+    }
+    .modal-text{
+        max-width: 65%;
+        height: auto;
+    }
+    .modal-text-text{
+        max-width: 100%;
+        height: fit-content;
+    }
+    .type-massage{
+        max-width: 90%;
+    }
 }
